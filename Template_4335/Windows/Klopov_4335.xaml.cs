@@ -30,7 +30,7 @@ namespace Template_4335.Windows
 
         private void WordPageBtn_Click(object sender, RoutedEventArgs e)
         {
-            //MainFrame.Navigate(new Klopov4335.WordPage());
+            MainFrame.Navigate(new Klopov4335.WordPage());
         }
     }
 }

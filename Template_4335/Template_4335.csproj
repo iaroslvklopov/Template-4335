@@ -214,6 +214,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EmbeddedResource Include="Windows\Klopov4335\5.json" />
     <None Include="Windows\Klopov4335\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
