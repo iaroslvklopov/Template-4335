@@ -6,12 +6,28 @@
         xmlns:local="clr-namespace:Template_4335.Windows"
         mc:Ignorable="d"
         Title="Klopov_4335" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Background" Value="Green"/>
+        </Style>
+    </Window.Resources>
     <Grid>
-        <WrapPanel>
-            <TextBlock FontSize="16" TextWrapping="Wrap">не такой уж и</TextBlock>
-            <TextBlock FontSize="36" TextWrapping="Wrap">Автор - Клопов Ярослав 4335, топчу чернозем 18 лет</TextBlock>
-            
-
-        </WrapPanel>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="70" />
+            </Grid.RowDefinitions>
+            <TextBlock Text="Клопов Ярослав Сергеевич. 10 вариант." Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" />
+            <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden" />
+            <WrapPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button x:Name="ExcelPageBtn" Content="Excel страница" Margin="0 0 50 0" Click="ExcelPageBtn_Click" />
+                <Button x:Name="WordPageBtn" Content="Word страница" Click="WordPageBtn_Click" />
+            </WrapPanel>
+        </Grid>
     </Grid>
 </Window>
